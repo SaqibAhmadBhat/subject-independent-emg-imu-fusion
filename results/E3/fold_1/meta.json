@@ -1,0 +1,18 @@
+{
+  "experiment": "E3",
+  "fold": 1,
+  "n_params": 177732,
+  "epochs": 50,
+  "train_time_s": 38.45,
+  "inf_time_s": 0.0489,
+  "hp": {
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 50,
+    "lr_patience": 5,
+    "lr_factor": 0.5,
+    "seed": 42,
+    "dropout": 0.3
+  }
+}

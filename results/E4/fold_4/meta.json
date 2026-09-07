@@ -1,0 +1,18 @@
+{
+  "experiment": "E4",
+  "fold": 4,
+  "n_params": 330052,
+  "epochs": 50,
+  "train_time_s": 6271.33,
+  "inf_time_s": 13.9103,
+  "hp": {
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 50,
+    "lr_patience": 5,
+    "lr_factor": 0.5,
+    "seed": 42,
+    "dropout": 0.3
+  }
+}

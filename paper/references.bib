@@ -1,0 +1,227 @@
+% ============================================================
+% references.bib
+%
+% Every entry below was located and checked against a primary
+% source (publisher page, Crossref metadata, Zenodo record, or
+% arXiv listing) during the literature audit for Sections I-III.
+% No entry, author, or DOI is invented. Fields that could not be
+% independently confirmed are simply omitted rather than guessed.
+%
+% ACTION REQUIRED before submission: re-check every entry below
+% directly against its primary source once more, since venue
+% pagination/article numbers were not always available through
+% automated retrieval.
+% ============================================================
+
+% Introduces the SDALLE dataset with a TCN baseline classifier;
+% published 28 December 2025. Author order/initials as printed on
+% the MDPI article page.
+@article{el-khoreby2025sdalle,
+  title     = {Lower Limb Activity Classification with Electromyography
+               and Inertial Measurement Unit Sensors Using a Temporal
+               Convolutional Neural Network on an Experimental Dataset},
+  author    = {El-Khoreby, Mohamed A. and Moawad, A. and Issa, Hanady H.
+               and Fawaz, Shereen I. and Awad, Mohammed I. and
+               Abdellatif, A.},
+  journal   = {Applied System Innovation},
+  volume    = {9},
+  number    = {1},
+  pages     = {13},
+  year      = {2026},
+  doi       = {10.3390/asi9010013},
+  url       = {https://doi.org/10.3390/asi9010013},
+  publisher = {MDPI}
+}
+
+% Multi-architecture benchmark on SDALLE (16 architectures) and
+% ENABL3S using a window-level, non-participant-independent
+% train/test split; authors explicitly identify participant-
+% independent evaluation and multi-rate fusion as required future
+% work. Published 20 August 2026. Author order confirmed via
+% Crossref metadata.
+@article{farouk2026sdalle,
+  title     = {A multimodal {EMG}--{IMU} dataset and multi-dataset
+               benchmark for deep learning-based human activity
+               recognition},
+  author    = {Farouk, Mohamed Khaled and El-Khatib, Mohamed Fawzy and
+               Awad, Mohammed I. and Atia, Mostafa R. A. and
+               Abdellatif, A.},
+  journal   = {Scientific Reports},
+  volume    = {16},
+  pages     = {26180},
+  year      = {2026},
+  doi       = {10.1038/s41598-026-64847-4},
+  url       = {https://doi.org/10.1038/s41598-026-64847-4},
+  publisher = {Springer Nature}
+}
+
+% Dataset record. License: CC-BY-4.0. Uploaded 9 February 2025.
+% Contributor list as printed on the Zenodo record page (seven
+% contributors; order and affiliations as listed there).
+@misc{sdalle2025zenodo,
+  title        = {{DATASET\_SDALLE}: Human Activity Recognition (HAR)
+                  dataset for lower limb rehabilitation devices},
+  author       = {{Ibrahim, Ahmed Abdellatif Hamed} and
+                  {El-Khoreby, Mohamed Atef} and
+                  {Moawad, Azza Kamal} and
+                  {Issa, Hanady Hussien} and
+                  {Fawaz, Shereen Ismail} and
+                  {Awad, Mohammed Ibrahim} and
+                  {Farouk, Mohamed Khaled}},
+  year         = {2025},
+  howpublished = {Zenodo},
+  doi          = {10.5281/zenodo.14841611},
+  url          = {https://zenodo.org/records/14841611}
+}
+
+% EMG-only classification of four lower-limb activities in 25
+% athletes; classical ML on hand-crafted time/frequency features;
+% 80:20 random split plus cross-subject and cross-session tests.
+% Authors and venue confirmed via Crossref.
+@article{zohirov2025emglowerlimb,
+  title   = {{EMG}-Based Recognition of Lower Limb Movements in
+             Athletes: A Comparative Study of Classification
+             Techniques},
+  author  = {Zohirov, Kudratjon and Makhmudjanov, Sarvar and
+             Ruziboev, Feruz and Berdiev, Golib and Temirov, Mirjakhon
+             and Sherboboyeva, Gulrukh and Achilova, Firuza and
+             Pardayeva, Gulmira and Boykobilov, Sardor},
+  journal = {Signals},
+  volume  = {6},
+  number  = {3},
+  pages   = {45},
+  year    = {2025},
+  doi     = {10.3390/signals6030045},
+  url     = {https://doi.org/10.3390/signals6030045},
+  publisher = {MDPI}
+}
+
+% Broad survey of IMU-based human activity recognition: sensor
+% placement, representation learning, and evaluation practice.
+% Authors and venue confirmed via Crossref.
+@article{sepahvand2025imusurvey,
+  title   = {State-of-the-art in human activity recognition based on
+             inertial measurement unit sensors: survey and
+             applications},
+  author  = {Sepahvand, Majid and Meqdad, Maytham N. and
+             Abdali-Mohammadi, Fardin},
+  journal = {International Journal of Computers and Applications},
+  volume  = {47},
+  number  = {1},
+  year    = {2025},
+  doi     = {10.1080/1206212X.2024.2426501},
+  url     = {https://doi.org/10.1080/1206212X.2024.2426501},
+  publisher = {Taylor \& Francis}
+}
+
+% EMG (8 ch.) + IMU (3 sensors) fusion for 5 lower-limb motions for
+% ankle exoskeleton control; strict LOSO with few-shot calibration
+% on a 3-subject cohort. Authors and venue confirmed via Crossref.
+@article{ruhrbergestevez2025ankleexo,
+  title   = {Deep learning for motion classification in ankle
+             exoskeletons using surface {EMG} and {IMU} signals},
+  author  = {{Ruhrberg Est\'{e}vez}, Silas and Mallah, Jos\'{e}e and
+             Kazieczko, Dominika and Tang, Chenyu and
+             Occhipinti, Luigi G.},
+  journal = {Scientific Reports},
+  volume  = {15},
+  number  = {1},
+  year    = {2025},
+  doi     = {10.1038/s41598-025-22103-1},
+  url     = {https://doi.org/10.1038/s41598-025-22103-1},
+  publisher = {Springer Nature}
+}
+
+% Dual-stream attention EMG-IMU fusion under strict LOSO on the
+% HuGaDB gait dataset (not SDALLE). Author list and volume as
+% printed on the Frontiers article page.
+@article{xu2026dsaf,
+  title   = {Subject-independent gait activity recognition using
+             {DSAF}: dual-stream {IMU-EMG} attention fusion with
+             asymmetric temporal encoding and physiological
+             complementarity weighting},
+  author  = {Xu, Zhangyue and Zhu, Yan and Li, Shurui},
+  journal = {Frontiers in Neurorobotics},
+  volume  = {20},
+  year    = {2026},
+  doi     = {10.3389/fnbot.2026.1901746},
+  url     = {https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2026.1901746/full}
+}
+
+% Quantitative demonstration that k-fold cross-validation
+% overestimates accuracy relative to LOSO on wearable sensor HAR
+% due to same-subject and overlapping-window leakage. Authors and
+% venue confirmed via Crossref.
+@article{rehman2024validation,
+  title   = {Human Activity Recognition: A Comparative Study of
+             Validation Methods and Impact of Feature Extraction in
+             Wearable Sensors},
+  author  = {Rehman, Saeed Ur and Ali, Anwar and Khan, Adil Mehmood
+             and Okpala, Cynthia},
+  journal = {Algorithms},
+  volume  = {17},
+  number  = {12},
+  pages   = {556},
+  year    = {2024},
+  doi     = {10.3390/a17120556},
+  url     = {https://doi.org/10.3390/a17120556},
+  publisher = {MDPI}
+}
+
+% Preprint, not peer-reviewed as of the literature audit date
+% (posted 21 August 2026). Reports subject-mixed to LOSO F1
+% dropping from 81.17% to 20.29% on the authors' own MAGIC-HRI
+% EMG-IMU gesture dataset (11 subjects, 53 classes); cited only to
+% illustrate that the subject-dependent/independent gap can be
+% large in adjacent EMG-IMU tasks, not as evidence about SDALLE.
+% Full author list as printed on the arXiv abstract page.
+@misc{carminati2026personalization,
+  title         = {Why Personalization Matters: Cross-Subject
+                   Challenges in {EMG-IMU}-based {HRI} Activity
+                   Recognition},
+  author        = {{Carminati}, Ruan Rithelle Chagas de Faria and
+                    Braglia, Giovanni and Biagiotti, Luigi and
+                    {Rohrich}, Ronnier Frates and
+                    {de Oliveira}, Andre Schneider and
+                    Hartmann, Mikael Nedel and
+                    Lazzaretti, Andr\'{e} Eugenio},
+  year          = {2026},
+  eprint        = {2608.21620},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2608.21620}
+}
+
+% Preprint, not peer-reviewed as of the literature audit date
+% (posted 17 August 2025). Cited for its claim that cross-person
+% domain shift can reduce HAR accuracy by up to 42.4%, and for its
+% conclusion that standardized, leakage-aware evaluation protocols
+% are broadly lacking across HAR research generally. Full author
+% list as printed on the arXiv abstract page.
+@misc{cai2025generalizablehar,
+  title         = {Towards Generalizable Human Activity Recognition:
+                   A Survey},
+  author        = {Cai, Yize and Guo, Baoshen and Salim, Flora and
+                    Hong, Zhiqing},
+  year          = {2025},
+  eprint        = {2508.12213},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2508.12213}
+}
+
+% General (non-HAR) multi-rate sensor fusion survey, cited only to
+% establish that reconciling heterogeneous sensor sampling rates is
+% a recognized, non-trivial design decision in the wider sensor
+% fusion / estimation literature. Authors, venue and DOI confirmed
+% via Crossref.
+@article{shen2022multiratefusion,
+  title   = {Multi-sensor multi-rate fusion estimation for networked
+             systems: Advances and perspectives},
+  author  = {Shen, Yuxuan and Wang, Zidong and Dong, Hongli and
+             Liu, Hongjian},
+  journal = {Information Fusion},
+  volume  = {82},
+  year    = {2022},
+  doi     = {10.1016/j.inffus.2021.12.005},
+  url     = {https://doi.org/10.1016/j.inffus.2021.12.005},
+  publisher = {Elsevier}
+}

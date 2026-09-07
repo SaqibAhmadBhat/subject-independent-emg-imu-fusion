@@ -1,0 +1,58 @@
+{
+  "accuracy": 0.563003,
+  "macro_precision": 0.612909,
+  "macro_recall": 0.516627,
+  "macro_f1": 0.487602,
+  "n_test_windows": 746,
+  "per_class": {
+    "jogging": {
+      "precision": 0.4,
+      "recall": 0.645161,
+      "f1": 0.493827
+    },
+    "stairs_down": {
+      "precision": 0.55814,
+      "recall": 0.507042,
+      "f1": 0.531365
+    },
+    "stairs_up": {
+      "precision": 0.777778,
+      "recall": 0.08805,
+      "f1": 0.158192
+    },
+    "walking": {
+      "precision": 0.715719,
+      "recall": 0.826255,
+      "f1": 0.767025
+    }
+  },
+  "confusion_matrix": [
+    [
+      120,
+      6,
+      1,
+      59
+    ],
+    [
+      46,
+      72,
+      3,
+      21
+    ],
+    [
+      94,
+      46,
+      14,
+      5
+    ],
+    [
+      40,
+      5,
+      0,
+      214
+    ]
+  ],
+  "experiment": "E1",
+  "fold": 5,
+  "test_subject": 5
+}

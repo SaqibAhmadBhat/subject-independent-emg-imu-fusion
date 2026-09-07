@@ -1,0 +1,126 @@
+{
+  "experiment": "E3",
+  "folds": [
+    1
+  ],
+  "mean_accuracy": 0.803709,
+  "std_accuracy": 0.0,
+  "mean_macro_f1": 0.799152,
+  "std_macro_f1": 0.0,
+  "mean_macro_precision": 0.852498,
+  "std_macro_precision": 0.0,
+  "mean_macro_recall": 0.792353,
+  "std_macro_recall": 0.0,
+  "aggregate_metrics": {
+    "accuracy": 0.803709,
+    "macro_precision": 0.852498,
+    "macro_recall": 0.792353,
+    "macro_f1": 0.799152,
+    "per_class": {
+      "jogging": {
+        "precision": 0.579767,
+        "recall": 0.973856,
+        "f1": 0.726829
+      },
+      "stairs_down": {
+        "precision": 0.861386,
+        "recall": 0.669231,
+        "f1": 0.753247
+      },
+      "stairs_up": {
+        "precision": 0.989247,
+        "recall": 0.70229,
+        "f1": 0.821429
+      },
+      "walking": {
+        "precision": 0.979592,
+        "recall": 0.824034,
+        "f1": 0.895105
+      }
+    },
+    "confusion_matrix": [
+      [
+        149,
+        1,
+        0,
+        3
+      ],
+      [
+        43,
+        87,
+        0,
+        0
+      ],
+      [
+        27,
+        11,
+        92,
+        1
+      ],
+      [
+        38,
+        2,
+        1,
+        192
+      ]
+    ]
+  },
+  "fold_metrics": [
+    {
+      "accuracy": 0.803709,
+      "macro_precision": 0.852498,
+      "macro_recall": 0.792353,
+      "macro_f1": 0.799152,
+      "per_class": {
+        "jogging": {
+          "precision": 0.579767,
+          "recall": 0.973856,
+          "f1": 0.726829
+        },
+        "stairs_down": {
+          "precision": 0.861386,
+          "recall": 0.669231,
+          "f1": 0.753247
+        },
+        "stairs_up": {
+          "precision": 0.989247,
+          "recall": 0.70229,
+          "f1": 0.821429
+        },
+        "walking": {
+          "precision": 0.979592,
+          "recall": 0.824034,
+          "f1": 0.895105
+        }
+      },
+      "confusion_matrix": [
+        [
+          149,
+          1,
+          0,
+          3
+        ],
+        [
+          43,
+          87,
+          0,
+          0
+        ],
+        [
+          27,
+          11,
+          92,
+          1
+        ],
+        [
+          38,
+          2,
+          1,
+          192
+        ]
+      ],
+      "fold": 1,
+      "test_subject_id": 1
+    }
+  ]
+}

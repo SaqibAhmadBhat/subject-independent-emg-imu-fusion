@@ -1,0 +1,52 @@
+# ──────────────────────────────────────────────────────────────
+# .gitignore — subject-independent-emg-imu-fusion
+# ──────────────────────────────────────────────────────────────
+
+# ── Dataset (not redistributed) ──────────────────────────────
+data/raw/
+data/processed/
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# ── Virtual environments ─────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── macOS ────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── IDEs ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Local backups and temporary files ────────────────────────
+results_backup/
+*.tmp
+
+# ── Private documents ────────────────────────────────────────
+*.pdf
+!paper/*.pdf
+extracted.txt
+
+# ── Logs with machine-specific paths ────────────────────────
+# (training log is preserved in results/ as a frozen artifact;
+#  evaluation run log contains machine-specific paths)
+evaluation/evaluation_run.log

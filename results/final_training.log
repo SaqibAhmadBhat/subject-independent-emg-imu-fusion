@@ -1,0 +1,1203 @@
+
+=================================================================
+  FINAL TRAINING RUN — 2026-09-03 13:31:52 IST
+  Device: mps  |  Epochs: 50
+  Python: Python 3.13.12
+  PyTorch: 2.14.0
+=================================================================
+
+[START] E1 fold_1 — 2026-09-03 13:31:53
+
+=======================================================
+  E1  Fold 01  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2442 acc 0.4321 | lr 1.00e-03
+  Epoch  10/50 | loss 0.6969 acc 0.7082 | lr 1.00e-03
+  Epoch  20/50 | loss 0.5346 acc 0.7768 | lr 1.00e-03
+  Epoch  30/50 | loss 0.4261 acc 0.8236 | lr 1.00e-03
+  Epoch  40/50 | loss 0.3747 acc 0.8434 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3543 acc 0.8549 | lr 1.00e-03
+  Training time: 250.7s  |  Inference time: 0.326s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_1 — 252s — PASS
+
+[START] E1 fold_2 — 2026-09-03 13:36:05
+
+=======================================================
+  E1  Fold 02  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2410 acc 0.4346 | lr 1.00e-03
+  Epoch  10/50 | loss 0.7471 acc 0.6816 | lr 1.00e-03
+  Epoch  20/50 | loss 0.6296 acc 0.7320 | lr 1.00e-03
+  Epoch  30/50 | loss 0.5205 acc 0.7860 | lr 1.00e-03
+  Epoch  40/50 | loss 0.4271 acc 0.8215 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3705 acc 0.8456 | lr 1.00e-03
+  Training time: 262.8s  |  Inference time: 0.314s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_2 — 266s — PASS
+
+[START] E1 fold_3 — 2026-09-03 13:40:31
+
+=======================================================
+  E1  Fold 03  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.1587 acc 0.4766 | lr 1.00e-03
+  Epoch  10/50 | loss 0.6699 acc 0.7084 | lr 1.00e-03
+  Epoch  20/50 | loss 0.5568 acc 0.7711 | lr 1.00e-03
+  Epoch  30/50 | loss 0.4360 acc 0.8275 | lr 1.00e-03
+  Epoch  40/50 | loss 0.3667 acc 0.8464 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3191 acc 0.8663 | lr 1.00e-03
+  Training time: 297.6s  |  Inference time: 0.203s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_3 — 299s — PASS
+
+[START] E1 fold_4 — 2026-09-03 13:45:30
+
+=======================================================
+  E1  Fold 04  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2238 acc 0.4523 | lr 1.00e-03
+  Epoch  10/50 | loss 0.7105 acc 0.7053 | lr 1.00e-03
+  Epoch  20/50 | loss 0.6010 acc 0.7590 | lr 1.00e-03
+  Epoch  30/50 | loss 0.4724 acc 0.8168 | lr 1.00e-03
+  Epoch  40/50 | loss 0.4105 acc 0.8400 | lr 1.00e-03
+  Epoch  50/50 | loss 0.4391 acc 0.8286 | lr 5.00e-04
+  Training time: 211.4s  |  Inference time: 0.230s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_4 — 214s — PASS
+
+[START] E1 fold_5 — 2026-09-03 13:49:04
+
+=======================================================
+  E1  Fold 05  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2435 acc 0.4323 | lr 1.00e-03
+  Epoch  10/50 | loss 0.7281 acc 0.6830 | lr 1.00e-03
+  Epoch  20/50 | loss 0.5962 acc 0.7473 | lr 1.00e-03
+  Epoch  30/50 | loss 0.4789 acc 0.8015 | lr 1.00e-03
+  Epoch  40/50 | loss 0.4079 acc 0.8342 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3573 acc 0.8503 | lr 1.00e-03
+  Training time: 223.4s  |  Inference time: 0.248s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_5 — 225s — PASS
+
+[START] E1 fold_6 — 2026-09-03 13:52:49
+
+=======================================================
+  E1  Fold 06  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2128 acc 0.4601 | lr 1.00e-03
+  Epoch  10/50 | loss 0.6688 acc 0.7318 | lr 1.00e-03
+  Epoch  20/50 | loss 0.4868 acc 0.8039 | lr 1.00e-03
+  Epoch  30/50 | loss 0.3898 acc 0.8422 | lr 1.00e-03
+  Epoch  40/50 | loss 0.3290 acc 0.8694 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3065 acc 0.8719 | lr 1.00e-03
+  Training time: 239.9s  |  Inference time: 0.266s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_6 — 242s — PASS
+
+[START] E1 fold_7 — 2026-09-03 13:56:51
+
+=======================================================
+  E1  Fold 07  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2332 acc 0.4305 | lr 1.00e-03
+  Epoch  10/50 | loss 0.6636 acc 0.7227 | lr 1.00e-03
+  Epoch  20/50 | loss 0.5014 acc 0.7989 | lr 1.00e-03
+  Epoch  30/50 | loss 0.3821 acc 0.8501 | lr 1.00e-03
+  Epoch  40/50 | loss 0.3512 acc 0.8609 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3071 acc 0.8744 | lr 1.00e-03
+  Training time: 237.1s  |  Inference time: 0.319s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_7 — 239s — PASS
+
+[START] E1 fold_8 — 2026-09-03 14:00:50
+
+=======================================================
+  E1  Fold 08  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2384 acc 0.4361 | lr 1.00e-03
+  Epoch  10/50 | loss 0.7204 acc 0.6915 | lr 1.00e-03
+  Epoch  20/50 | loss 0.5528 acc 0.7740 | lr 1.00e-03
+  Epoch  30/50 | loss 0.4619 acc 0.8197 | lr 1.00e-03
+  Epoch  40/50 | loss 0.4242 acc 0.8342 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3611 acc 0.8534 | lr 1.00e-03
+  Training time: 225.8s  |  Inference time: 0.221s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_8 — 228s — PASS
+
+[START] E1 fold_9 — 2026-09-03 14:04:38
+
+=======================================================
+  E1  Fold 09  (50 epochs)
+=======================================================
+  Parameters: 156,228
+  Epoch   1/50 | loss 1.2174 acc 0.4430 | lr 1.00e-03
+  Epoch  10/50 | loss 0.6899 acc 0.7126 | lr 1.00e-03
+  Epoch  20/50 | loss 0.5170 acc 0.7885 | lr 1.00e-03
+  Epoch  30/50 | loss 0.4466 acc 0.8151 | lr 1.00e-03
+  Epoch  40/50 | loss 0.4298 acc 0.8261 | lr 1.00e-03
+  Epoch  50/50 | loss 0.3802 acc 0.8417 | lr 1.00e-03
+  Training time: 221.4s  |  Inference time: 0.221s  |  Params: 156,228
+
+Done.
+[DONE] E1 fold_9 — 223s — PASS
+
+[START] E2 fold_1 — 2026-09-03 14:08:21
+
+=======================================================
+  E2  Fold 01  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6985 acc 0.6855 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3411 acc 0.8440 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2611 acc 0.8895 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2156 acc 0.9094 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1943 acc 0.9197 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1771 acc 0.9317 | lr 1.00e-03
+  Training time: 37.9s  |  Inference time: 0.048s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_1 — 39s — PASS
+
+[START] E2 fold_2 — 2026-09-03 14:09:00
+
+=======================================================
+  E2  Fold 02  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6742 acc 0.7037 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3452 acc 0.8472 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2602 acc 0.8894 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2249 acc 0.9057 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1978 acc 0.9227 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1694 acc 0.9296 | lr 1.00e-03
+  Training time: 37.8s  |  Inference time: 0.042s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_2 — 39s — PASS
+
+[START] E2 fold_3 — 2026-09-03 14:09:40
+
+=======================================================
+  E2  Fold 03  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6727 acc 0.7091 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3331 acc 0.8482 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2797 acc 0.8797 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2217 acc 0.9071 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1863 acc 0.9276 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1693 acc 0.9297 | lr 1.00e-03
+  Training time: 38.0s  |  Inference time: 0.059s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_3 — 39s — PASS
+
+[START] E2 fold_4 — 2026-09-03 14:10:19
+
+=======================================================
+  E2  Fold 04  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6794 acc 0.7003 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3377 acc 0.8506 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2811 acc 0.8805 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2349 acc 0.9030 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1883 acc 0.9202 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1475 acc 0.9393 | lr 5.00e-04
+  Training time: 39.2s  |  Inference time: 0.055s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_4 — 41s — PASS
+
+[START] E2 fold_5 — 2026-09-03 14:11:00
+
+=======================================================
+  E2  Fold 05  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6594 acc 0.7081 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3416 acc 0.8455 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2754 acc 0.8814 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2261 acc 0.9067 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1885 acc 0.9219 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1583 acc 0.9358 | lr 5.00e-04
+  Training time: 37.1s  |  Inference time: 0.060s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_5 — 39s — PASS
+
+[START] E2 fold_6 — 2026-09-03 14:11:39
+
+=======================================================
+  E2  Fold 06  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6592 acc 0.7190 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3140 acc 0.8659 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2484 acc 0.8967 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2009 acc 0.9206 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1605 acc 0.9349 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1461 acc 0.9433 | lr 1.00e-03
+  Training time: 37.3s  |  Inference time: 0.064s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_6 — 38s — PASS
+
+[START] E2 fold_7 — 2026-09-03 14:12:18
+
+=======================================================
+  E2  Fold 07  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6812 acc 0.6970 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3508 acc 0.8382 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2803 acc 0.8816 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2156 acc 0.9115 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1948 acc 0.9219 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1803 acc 0.9286 | lr 1.00e-03
+  Training time: 40.2s  |  Inference time: 0.047s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_7 — 41s — PASS
+
+[START] E2 fold_8 — 2026-09-03 14:12:59
+
+=======================================================
+  E2  Fold 08  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6635 acc 0.7160 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3390 acc 0.8460 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2495 acc 0.8893 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2104 acc 0.9187 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1858 acc 0.9236 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1305 acc 0.9487 | lr 5.00e-04
+  Training time: 38.9s  |  Inference time: 0.055s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_8 — 41s — PASS
+
+[START] E2 fold_9 — 2026-09-03 14:13:40
+
+=======================================================
+  E2  Fold 09  (50 epochs)
+=======================================================
+  Parameters: 174,148
+  Epoch   1/50 | loss 0.6730 acc 0.7073 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3319 acc 0.8599 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2718 acc 0.8868 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2477 acc 0.8971 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1881 acc 0.9240 | lr 1.00e-03
+  Epoch  50/50 | loss 0.2002 acc 0.9168 | lr 1.00e-03
+  Training time: 38.1s  |  Inference time: 0.053s  |  Params: 174,148
+
+Done.
+[DONE] E2 fold_9 — 40s — PASS
+
+[START] E3 fold_1 — 2026-09-03 14:14:20
+
+=======================================================
+  E3  Fold 01  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6503 acc 0.7070 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3380 acc 0.8469 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2688 acc 0.8834 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2142 acc 0.9110 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1836 acc 0.9288 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1513 acc 0.9398 | lr 1.00e-03
+  Training time: 38.4s  |  Inference time: 0.049s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_1 — 40s — PASS
+
+[START] E3 fold_2 — 2026-09-03 14:15:00
+
+=======================================================
+  E3  Fold 02  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6596 acc 0.7041 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3437 acc 0.8472 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2642 acc 0.8871 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2349 acc 0.9059 | lr 1.00e-03
+  Epoch  40/50 | loss 0.2158 acc 0.9126 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1754 acc 0.9300 | lr 1.00e-03
+  Training time: 39.0s  |  Inference time: 0.046s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_2 — 40s — PASS
+
+[START] E3 fold_3 — 2026-09-03 14:15:40
+
+=======================================================
+  E3  Fold 03  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6310 acc 0.7155 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3269 acc 0.8502 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2418 acc 0.8969 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2077 acc 0.9144 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1828 acc 0.9274 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1683 acc 0.9296 | lr 1.00e-03
+  Training time: 36.8s  |  Inference time: 0.054s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_3 — 39s — PASS
+
+[START] E3 fold_4 — 2026-09-03 14:16:19
+
+=======================================================
+  E3  Fold 04  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6618 acc 0.7052 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3045 acc 0.8627 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2872 acc 0.8807 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2205 acc 0.9084 | lr 1.00e-03
+  Epoch  40/50 | loss 0.2209 acc 0.9144 | lr 5.00e-04
+  Epoch  50/50 | loss 0.1449 acc 0.9432 | lr 5.00e-04
+  Training time: 36.8s  |  Inference time: 0.052s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_4 — 38s — PASS
+
+[START] E3 fold_5 — 2026-09-03 14:16:57
+
+=======================================================
+  E3  Fold 05  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6339 acc 0.7282 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3147 acc 0.8567 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2811 acc 0.8770 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2296 acc 0.9012 | lr 1.00e-03
+  Epoch  40/50 | loss 0.2204 acc 0.9112 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1992 acc 0.9175 | lr 1.00e-03
+  Training time: 36.2s  |  Inference time: 0.057s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_5 — 37s — PASS
+
+[START] E3 fold_6 — 2026-09-03 14:17:35
+
+=======================================================
+  E3  Fold 06  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6505 acc 0.7097 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3074 acc 0.8670 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2450 acc 0.8960 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2064 acc 0.9155 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1776 acc 0.9235 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1609 acc 0.9359 | lr 1.00e-03
+  Training time: 37.2s  |  Inference time: 0.063s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_6 — 38s — PASS
+
+[START] E3 fold_7 — 2026-09-03 14:18:13
+
+=======================================================
+  E3  Fold 07  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6744 acc 0.6957 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3439 acc 0.8506 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2473 acc 0.8963 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2105 acc 0.9111 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1812 acc 0.9244 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1637 acc 0.9365 | lr 1.00e-03
+  Training time: 37.8s  |  Inference time: 0.051s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_7 — 40s — PASS
+
+[START] E3 fold_8 — 2026-09-03 14:18:53
+
+=======================================================
+  E3  Fold 08  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6543 acc 0.7064 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3121 acc 0.8622 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2604 acc 0.8901 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2203 acc 0.9080 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1813 acc 0.9299 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1592 acc 0.9346 | lr 1.00e-03
+  Training time: 37.7s  |  Inference time: 0.054s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_8 — 39s — PASS
+
+[START] E3 fold_9 — 2026-09-03 14:19:32
+
+=======================================================
+  E3  Fold 09  (50 epochs)
+=======================================================
+  Parameters: 177,732
+  Epoch   1/50 | loss 0.6534 acc 0.7194 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3079 acc 0.8621 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2568 acc 0.8941 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2139 acc 0.9123 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1756 acc 0.9297 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1582 acc 0.9397 | lr 1.00e-03
+  Training time: 37.4s  |  Inference time: 0.061s  |  Params: 177,732
+
+Done.
+[DONE] E3 fold_9 — 39s — PASS
+
+[START] E4 fold_1 — 2026-09-03 14:20:11
+
+=======================================================
+  E4  Fold 01  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_1 — 1s — exit code 1
+
+[START] E4 fold_2 — 2026-09-03 14:20:12
+
+=======================================================
+  E4  Fold 02  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_2 — 1s — exit code 1
+
+[START] E4 fold_3 — 2026-09-03 14:20:13
+
+=======================================================
+  E4  Fold 03  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_3 — 2s — exit code 1
+
+[START] E4 fold_4 — 2026-09-03 14:20:15
+
+=======================================================
+  E4  Fold 04  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_4 — 1s — exit code 1
+
+[START] E4 fold_5 — 2026-09-03 14:20:16
+
+=======================================================
+  E4  Fold 05  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_5 — 2s — exit code 1
+
+[START] E4 fold_6 — 2026-09-03 14:20:18
+
+=======================================================
+  E4  Fold 06  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_6 — 1s — exit code 1
+
+[START] E4 fold_7 — 2026-09-03 14:20:19
+
+=======================================================
+  E4  Fold 07  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_7 — 1s — exit code 1
+
+[START] E4 fold_8 — 2026-09-03 14:20:20
+
+=======================================================
+  E4  Fold 08  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_8 — 2s — exit code 1
+
+[START] E4 fold_9 — 2026-09-03 14:20:22
+
+=======================================================
+  E4  Fold 09  (50 epochs)
+=======================================================
+  Parameters: 330,052
+Traceback (most recent call last):
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 268, in <module>
+    main()
+    ~~~~^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 262, in main
+    train_one_fold(exp, fold, args.epochs, device, out_dir, verbose=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/train.py", line 158, in train_one_fold
+    logits = model(x_emg, x_imu)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 122, in forward
+    z_emg = self.emg_encoder(x_emg)          # (batch, 128)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 62, in forward
+    x = self.block1(x)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/src/models.py", line 46, in forward
+    return self.net(x)
+           ~~~~~~~~^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 385, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/saqibahmadbhat/Desktop/RP/RP4/.venv/lib/python3.13/site-packages/torch/nn/modules/conv.py", line 380, in _conv_forward
+    return F.conv1d(
+           ~~~~~~~~^
+        input, weight, bias, self.stride, self.padding, self.dilation, self.groups
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+RuntimeError: Mismatched Tensor types in NNPack convolutionOutput
+[FAIL] E4 fold_9 — 1s — exit code 1
+
+
+=================================================================
+  TRAINING COMPLETE — 2026-09-03 14:20:24 IST
+=================================================================
+  Total:     36
+  Completed: 27
+  Skipped:   0 (already completed from prior run)
+  Failed:    9
+  Total time: 2910s (0h 48m 30s)
+
+  Failed folds:
+  E4/fold_1
+  E4/fold_2
+  E4/fold_3
+  E4/fold_4
+  E4/fold_5
+  E4/fold_6
+  E4/fold_7
+  E4/fold_8
+  E4/fold_9
+
+
+  Manifest: results/experiment_manifest.csv
+  Log:      results/final_training.log
+=================================================================
+=== E4 Fold 1 (CPU) ===
+[START] E4 fold_1 (CPU) — 2026-09-03 20:49:38
+
+=======================================================
+  E4  Fold 01  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6611 acc 0.7079 | lr 1.00e-03
+  Epoch  10/50 | loss 0.2981 acc 0.8675 | lr 1.00e-03
+  Epoch  20/50 | loss 0.1869 acc 0.9219 | lr 1.00e-03
+  Epoch  30/50 | loss 0.1411 acc 0.9435 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1210 acc 0.9482 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1156 acc 0.9528 | lr 1.00e-03
+  Training time: 11283.1s  |  Inference time: 14.728s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_1 (CPU) — PASS
+=== E4 Fold 2 (CPU) ===
+[START] E4 fold_2 (CPU) — 2026-09-03 23:57:59
+
+=======================================================
+  E4  Fold 02  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6537 acc 0.7182 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3753 acc 0.8287 | lr 1.00e-03
+  Epoch  20/50 | loss 0.3048 acc 0.8678 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2673 acc 0.8887 | lr 1.00e-03
+  Epoch  40/50 | loss 0.2122 acc 0.9139 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1905 acc 0.9205 | lr 1.00e-03
+  Training time: 6765.9s  |  Inference time: 11.331s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_2 (CPU) — PASS
+=== E4 Fold 3 (CPU) ===
+[START] E4 fold_3 (CPU) — 2026-09-04 01:50:59
+
+=======================================================
+  E4  Fold 03  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6472 acc 0.7196 | lr 1.00e-03
+  Epoch  10/50 | loss 0.2738 acc 0.8800 | lr 1.00e-03
+  Epoch  20/50 | loss 0.1988 acc 0.9200 | lr 1.00e-03
+  Epoch  30/50 | loss 0.1693 acc 0.9273 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1333 acc 0.9457 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1096 acc 0.9558 | lr 1.00e-03
+  Training time: 6240.2s  |  Inference time: 14.624s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_3 (CPU) — PASS
+=== E4 Fold 4 (CPU) ===
+[START] E4 fold_4 (CPU) — 2026-09-04 03:35:17
+
+=======================================================
+  E4  Fold 04  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6638 acc 0.7089 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3886 acc 0.8257 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2575 acc 0.8847 | lr 1.00e-03
+  Epoch  30/50 | loss 0.2439 acc 0.8943 | lr 5.00e-04
+  Epoch  40/50 | loss 0.1882 acc 0.9221 | lr 5.00e-04
+  Epoch  50/50 | loss 0.1514 acc 0.9381 | lr 5.00e-04
+  Training time: 6271.3s  |  Inference time: 13.910s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_4 (CPU) — PASS
+=== E4 Fold 5 (CPU) ===
+[START] E4 fold_5 (CPU) — 2026-09-04 05:20:05
+
+=======================================================
+  E4  Fold 05  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6689 acc 0.7070 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3390 acc 0.8356 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2693 acc 0.8825 | lr 1.00e-03
+  Epoch  30/50 | loss 0.1947 acc 0.9172 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1555 acc 0.9353 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1506 acc 0.9359 | lr 1.00e-03
+  Training time: 6223.2s  |  Inference time: 14.918s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_5 (CPU) — PASS
+=== E4 Fold 6 (CPU) ===
+[START] E4 fold_6 (CPU) — 2026-09-04 07:04:07
+
+=======================================================
+  E4  Fold 06  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6674 acc 0.7125 | lr 1.00e-03
+  Epoch  10/50 | loss 0.2429 acc 0.8980 | lr 1.00e-03
+  Epoch  20/50 | loss 0.1781 acc 0.9294 | lr 1.00e-03
+  Epoch  30/50 | loss 0.1350 acc 0.9462 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1201 acc 0.9507 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1047 acc 0.9589 | lr 1.00e-03
+  Training time: 6239.6s  |  Inference time: 14.518s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_6 (CPU) — PASS
+=== E4 Fold 7 (CPU) ===
+[START] E4 fold_7 (CPU) — 2026-09-04 08:48:24
+
+=======================================================
+  E4  Fold 07  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6863 acc 0.6902 | lr 1.00e-03
+  Epoch  10/50 | loss 0.2866 acc 0.8773 | lr 1.00e-03
+  Epoch  20/50 | loss 0.1943 acc 0.9221 | lr 1.00e-03
+  Epoch  30/50 | loss 0.1473 acc 0.9402 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1444 acc 0.9418 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1102 acc 0.9584 | lr 1.00e-03
+  Training time: 6327.5s  |  Inference time: 12.796s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_7 (CPU) — PASS
+=== E4 Fold 8 (CPU) ===
+[START] E4 fold_8 (CPU) — 2026-09-04 10:34:07
+
+=======================================================
+  E4  Fold 08  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6526 acc 0.7098 | lr 1.00e-03
+  Epoch  10/50 | loss 0.2814 acc 0.8747 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2191 acc 0.9062 | lr 1.00e-03
+  Epoch  30/50 | loss 0.1882 acc 0.9204 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1355 acc 0.9441 | lr 5.00e-04
+  Epoch  50/50 | loss 0.1146 acc 0.9550 | lr 5.00e-04
+  Training time: 6337.1s  |  Inference time: 13.848s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_8 (CPU) — PASS
+=== E4 Fold 9 (CPU) ===
+[START] E4 fold_9 (CPU) — 2026-09-04 12:20:01
+
+=======================================================
+  E4  Fold 09  (50 epochs)
+=======================================================
+  Parameters: 330,052
+  Epoch   1/50 | loss 0.6488 acc 0.7190 | lr 1.00e-03
+  Epoch  10/50 | loss 0.3116 acc 0.8663 | lr 1.00e-03
+  Epoch  20/50 | loss 0.2339 acc 0.9015 | lr 1.00e-03
+  Epoch  30/50 | loss 0.1973 acc 0.9197 | lr 1.00e-03
+  Epoch  40/50 | loss 0.1653 acc 0.9373 | lr 1.00e-03
+  Epoch  50/50 | loss 0.1226 acc 0.9503 | lr 5.00e-04
+  Training time: 6307.6s  |  Inference time: 15.301s  |  Params: 330,052
+
+Done.
+[DONE] E4 fold_9 (CPU) — PASS
