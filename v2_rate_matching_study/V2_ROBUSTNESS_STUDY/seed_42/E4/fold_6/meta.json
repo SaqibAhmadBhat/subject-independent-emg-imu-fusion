@@ -1,0 +1,74 @@
+{
+  "experiment": "E4",
+  "fold": 6,
+  "seed": 42,
+  "n_params": 330052,
+  "epochs": 50,
+  "train_time_s": 6798.13,
+  "inf_time_s": 15.2058,
+  "hp": {
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "epochs": 50,
+    "dropout": 0.3
+  },
+  "metrics": {
+    "accuracy": 0.775623,
+    "macro_f1": 0.765107,
+    "macro_precision": 0.792856,
+    "macro_recall": 0.759809,
+    "per_class": {
+      "jogging": {
+        "precision": 0.977778,
+        "recall": 0.717391,
+        "f1": 0.827586,
+        "support": 184
+      },
+      "stairs_down": {
+        "precision": 0.734848,
+        "recall": 0.625806,
+        "f1": 0.675958,
+        "support": 155
+      },
+      "stairs_up": {
+        "precision": 0.736196,
+        "recall": 0.710059,
+        "f1": 0.722892,
+        "support": 169
+      },
+      "walking": {
+        "precision": 0.722603,
+        "recall": 0.985981,
+        "f1": 0.833992,
+        "support": 214
+      }
+    },
+    "confusion_matrix": [
+      [
+        132,
+        17,
+        12,
+        23
+      ],
+      [
+        2,
+        97,
+        31,
+        25
+      ],
+      [
+        1,
+        15,
+        120,
+        33
+      ],
+      [
+        0,
+        3,
+        0,
+        211
+      ]
+    ]
+  }
+}

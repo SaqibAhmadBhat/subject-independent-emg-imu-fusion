@@ -1,148 +1,181 @@
-# Subject-Independent Multirate EMG–IMU Fusion for Lower Limb Activity Recognition
+# Subject-Independent EMG–IMU Sensor Fusion for Human Activity Recognition
 
-A reproducible evaluation of native-rate multirate sensor fusion versus individual modalities and rate-matched fusion for subject-independent lower-limb activity recognition, using the SDALLE dataset.
+[![DOI: 10.5281/zenodo.22649504](https://zenodo.org/badge/DOI/10.5281/zenodo.22649504.svg)](https://doi.org/10.5281/zenodo.22649504)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Data License: CC BY 4.0](https://img.shields.io/badge/Data_License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
+[![PyTorch 2.x](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
+[![CI](https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion/actions/workflows/ci.yml/badge.svg)](https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion/actions/workflows/ci.yml)
 
-## Research Question
+An open-source, reproducible research software repository for subject-independent human activity recognition (HAR) combining surface electromyography (sEMG) and inertial measurement units (IMUs) from the public [SDALLE dataset](https://doi.org/10.5281/zenodo.14841611).
 
-> Can native-rate multirate fusion of EMG and IMU signals improve subject-independent lower-limb activity recognition compared with individual modalities and rate-matched fusion?
+This repository contains two completed, permanently archived research studies:
+- **Version 1.0.0 (Multirate Fusion Study):** Evaluated multirate late fusion against unimodal baselines and early rate-matched fusion using single-seed leave-one-subject-out cross-validation.
+- **Version 2.0.0 (Rate-Matching Robustness Study):** A strictly parameter-matched evaluation (330,052 parameters) comparing rate-matched sEMG against native-rate sEMG across 9 leave-one-participant-out folds repeated over 5 random seeds (90 full runs).
 
-## Study Overview
+---
 
-Surface electromyography (EMG) and inertial measurement unit (IMU) signals provide complementary information about human movement. EMG captures neuromuscular activation at high temporal resolution (~1259 Hz), while IMU sensors capture kinematic patterns at a lower rate (~148 Hz). Most prior fusion approaches resample both modalities to a common rate, potentially discarding information. This project investigates whether preserving the native sampling rates through a dual-branch architecture improves subject-independent activity recognition.
+## Studies in this Repository
 
-## Experiments
+| Version | Tag | Focus & Scope | Model Capacity | Cross-Validation | Location | Archive DOI |
+|---|---|---|---|---|---|---|
+| **v1.0.0** | `v1.0.0` | Multirate late fusion vs unimodal baselines | Differing branch sizes | 9 folds $\times$ 1 seed (36 runs) | Repository root (`src/`, `results/`) | [10.5281/zenodo.22649505](https://doi.org/10.5281/zenodo.22649505) |
+| **v2.0.0** | `v2.0.0` | Rate-matched vs native-rate sEMG robustness | Exactly 330,052 parameters | 9 folds $\times$ 5 seeds (90 runs) | [`v2_rate_matching_study/`](v2_rate_matching_study/) | [10.5281/zenodo.22649504](https://doi.org/10.5281/zenodo.22649504) (Draft: `24220130`) |
 
-| Experiment | Input Modality | Channels | Sampling Rate | Fusion Strategy |
-|:---:|---|:---:|:---:|---|
-| **E1** | EMG only | 8 | 1259 Hz | — |
-| **E2** | IMU only | 48 | 148 Hz | — |
-| **E3** | EMG + IMU (rate-matched) | 56 | 148 Hz | Resample EMG → IMU rate, concatenate |
-| **E4** | EMG + IMU (multirate) | 8 + 48 | 1259 Hz + 148 Hz | Dual-branch CNN, late fusion |
+> **Methodological Separation:** Version 1.0.0 and Version 2.0.0 investigate different research questions. Version 1.0.0 compared distinct fusion architectures. Version 2.0.0 holds model capacity strictly constant to isolate the effect of sampling rate harmonization. Their numerical results must not be directly merged.
 
-All four experiments use the same 1D CNN architecture (two convolutional blocks with batch normalisation, GELU activations, adaptive average pooling, and a shared classifier head). E4 uses two independent encoder branches whose outputs are concatenated before classification.
+---
 
-## Dataset
+## What Version 2.0.0 Investigates
 
-This project uses the **SDALLE** (Surface-electrode Dataset for Activity recognition of the Lower Limb Extremities) dataset:
+In multimodal wearable sensing, sEMG signals are typically acquired at kilohertz rates (~1259 Hz) to capture muscle action potentials, whereas IMUs sample kinematics at lower frequencies (~148 Hz). A prevalent practice is **rate matching**—downsampling sEMG via cubic spline interpolation to match the inertial sampling frequency—which discards high-frequency spectral content and aliases frequencies above the 74.07 Hz Nyquist boundary.
 
-- **Source:** [Zenodo Record 14841611](https://zenodo.org/records/14841611)
-- **Subjects:** 9
-- **Activities:** 4 (jogging, stairs down, stairs up, walking)
-- **Sensors:** 8 surface sensors, each providing 1 EMG + 6 IMU channels (56 total)
-- **EMG sampling rate:** ~1259 Hz
-- **IMU sampling rate:** ~148 Hz
+**Core Research Question:**
+> Does native-rate sEMG processing preserve task-relevant neuromuscular information that improves subject-independent lower-limb activity recognition compared to rate-matched sEMG, when evaluated inside a dual-branch neural network of identical capacity?
 
-> **Note:** The raw SDALLE dataset is **not redistributed** in this repository. See [`data/README.md`](data/README.md) for instructions on obtaining the dataset from the official source.
+### Key Findings (Study V2)
+- **Protocol-Specified Primary Outcome:** Rate-matched fusion reached a mean participant accuracy of **72.90% $\pm$ 9.24%** versus **69.07% $\pm$ 10.80%** for native-rate fusion (mean paired difference: **+3.83 pp**, SD: 4.12 pp, median: +3.14 pp; rate matching ahead in 8 of 9 participants).
+- **Hypothesis Testing:** Two-sided Wilcoxon signed-rank test yields $W = 5$ ($W^+ = 40, W^- = 5$), exact $p = \mathbf{0.039}$, matched-pairs rank-biserial correlation $r = \mathbf{+0.78}$, 95% percentile bootstrap CI: $\mathbf{[1.27, 6.35] \text{ pp}}$.
+- **Sensitivity & Robustness:**
+  - Exact sign-flip permutation test on participant mean differences: $p = \mathbf{0.031}$ (16 of 512 sign assignments).
+  - Two-stage hierarchical bootstrap 95% CI (participants then seeds): $\mathbf{[1.07, 6.65] \text{ pp}}$.
+  - Leave-one-seed-out sensitivity: $p$ ranges from **$0.012$ to $0.055$** (rate matching ahead in 8/9 participants in every combination).
+  - Leave-one-participant-out sensitivity: omitting P1 yields $p = 0.008$; omitting any other participant yields $p = 0.055\text{--}0.078$, indicating the inferential fragility of an $N=9$ cohort.
+- **Variance Decomposition:** Standard deviation between seeds within a participant was **4.23 pp**, exceeding between-participant standard deviation (**3.66 pp**, ICC = **0.43**), proving that multi-seed replication is necessary in wearable deep learning.
+- **Spectral Signal Audit (All 361 Raw Trials):** $19.0\% \pm 10.3\%$ of sEMG power lay above 74.07 Hz (the rate-matched Nyquist limit), and $33.1\% \pm 12.4\%$ lay below 20 Hz. Super-Nyquist power fraction was not associated with accuracy differences ($\rho = 0.12, p = 0.77$).
+- **Computational Efficiency:** Rate matching trains **4.34× faster** (median 1,525.5 s vs 6,621.2 s per fold) and classifies 4.3× faster at inference.
 
-## Evaluation Protocol
-
-- **Leave-One-Subject-Out (LOSO):** 9 folds, each holding out one subject as the test set
-- **Window size:** 1.0 s
-- **Stride:** 0.5 s (50% overlap)
-- **Trial isolation:** No window crosses a trial boundary
-- **Normalisation:** Per-fold z-score using only training-fold statistics (no test data leakage)
-- **Statistical unit:** Subject-fold (n = 9 per experiment), not individual windows
-
-## Training Configuration
-
-| Parameter | Value |
-|---|---|
-| Optimizer | Adam |
-| Learning rate | 1 × 10⁻³ |
-| Weight decay | 1 × 10⁻⁴ |
-| Batch size | 64 |
-| Epochs | 50 |
-| LR scheduler | ReduceLROnPlateau (patience=5, factor=0.5, monitors training loss) |
-| Dropout | 0.3 |
-| Random seed | 42 |
-| Loss | CrossEntropyLoss |
-
-No test-fold signal was used for LR scheduling, early stopping, or checkpoint selection.
-
-## Results
-
-| Experiment | Accuracy (Mean ± Std) | Macro F1 (Mean ± Std) |
-|:---:|:---:|:---:|
-| E1 — EMG only | 47.1 ± 12.6% | 37.9 ± 12.3% |
-| E2 — IMU only | 67.9 ± 6.3% | 66.5 ± 6.3% |
-| E3 — Rate-matched | 63.4 ± 13.9% | 62.2 ± 13.0% |
-| E4 — Multirate | 71.7 ± 7.4% | 69.8 ± 7.3% |
-
-E4 achieved the highest observed mean accuracy and F1 score. However, **the advantage of E4 over E2 and E3 was not statistically significant** after Holm–Bonferroni correction for multiple comparisons (Wilcoxon signed-rank test, n = 9 folds):
-
-| Comparison | p (Holm-corrected) | Significant (α = 0.05) |
-|---|:---:|:---:|
-| E1 vs E2 | 0.039 | ✓ |
-| E1 vs E3 | 0.078 | — |
-| E1 vs E4 | 0.023 | ✓ |
-| E2 vs E3 | 0.641 | — |
-| E2 vs E4 | 0.148 | — |
-| E3 vs E4 | 0.082 | — |
-
-Full per-fold results and statistical analysis are in [`RESULTS.md`](RESULTS.md) and [`evaluation/`](evaluation/).
-
-## Reproducibility
-
-See [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) for the complete pipeline. In brief:
-
-```bash
-# 1. Obtain SDALLE from https://zenodo.org/records/14841611
-#    Extract to data/raw/SDALLE/
-
-# 2. Create virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# 3. Build processed datasets (LOSO splits)
-python3 src/build_datasets.py
-
-# 4. Train all 36 folds
-bash run_all.sh
-
-# 5. Evaluate all 36 folds
-python3 run_evaluation.py
-```
+---
 
 ## Repository Structure
 
-```
-├── src/                    # Source code
-│   ├── build_datasets.py   # Preprocessing, windowing, LOSO split construction
-│   ├── dataset_loader.py   # Raw SDALLE CSV parser
-│   ├── models.py           # 1D CNN architectures (single-branch + dual-branch)
-│   ├── normalizer.py       # Per-fold z-score normalisation
-│   ├── train.py            # Training loop
-│   ├── evaluate.py         # Original evaluation module
-│   └── windower.py         # Sliding window segmentation
-├── results/                # Frozen training artifacts (36 folds)
-├── evaluation/             # Evaluation outputs (metrics, figures, tables)
-├── paper/                  # Manuscript (LaTeX)
-├── data/                   # Dataset directory (raw data not included)
-├── run_all.sh              # Training orchestration script
-├── run_evaluation.py       # Full evaluation pipeline
-├── EXPERIMENTS.md          # Detailed experiment definitions
-├── RESULTS.md              # Comprehensive results documentation
-├── REPRODUCIBILITY.md      # Step-by-step reproduction guide
-├── RESEARCH_PROVENANCE.md  # Research lifecycle documentation
-└── requirements.txt        # Python dependencies
+```text
+subject-independent-emg-imu-fusion/
+├── docs/                               <-- Comprehensive Technical Documentation
+│   ├── ARCHITECTURE.md                 <-- Network architecture, layer budgets & RF
+│   ├── RESEARCH_WORKFLOW.md            <-- End-to-end experimental lifecycle
+│   ├── EXPERIMENT_DESIGN.md            <-- Demographics, segmentation & protocol
+│   ├── REPRODUCIBILITY.md              <-- 3-tier reproduction framework
+│   ├── INSTALLATION.md                 <-- Setup & GPU configuration guide
+│   ├── EXECUTION_GUIDE.md              <-- CLI execution commands
+│   ├── DATASET_GUIDE.md                <-- SDALLE sensor layout & synchronization
+│   ├── STATISTICAL_ANALYSIS.md         <-- Exact formulas & hypothesis tests
+│   └── RELEASE_NOTES.md                <-- v2.0.0 release notes
+│
+├── v2_rate_matching_study/             <-- Authoritative V2 Study Release
+│   ├── README.md                       <-- V2 study overview
+│   ├── REPRODUCE.md                    <-- Step-by-step reproduction guide
+│   ├── MANIFEST.md                     <-- File manifest & data checksums
+│   ├── PREPROCESSING.md                <-- Cubic-spline windowing specification
+│   ├── SHA256SUMS                      <-- Checksums of all V2 files
+│   ├── V2/src/                         <-- Dataset builder & windowing modules
+│   ├── src/                            <-- Core data loaders & model modules
+│   ├── provenance/                     <-- Archival copy of run scripts
+│   ├── verification/                   <-- Standalone Verification Suite
+│   │   ├── README.md                   <-- Verification instructions
+│   │   ├── verify_v2_statistics.py     <-- Primary statistical recomputation
+│   │   ├── verify_v2_additional_stats.py<-- Permutation & bootstrap recomputation
+│   │   ├── emg_spectrum_check.py       <-- 361-trial Welch PSD spectral check
+│   │   ├── audit_90_runs.py            <-- 90-run prediction integrity audit
+│   │   ├── SCIENTIFIC_DISCREPANCY_REGISTER.md <-- Register of all resolutions
+│   │   └── outputs/                    <-- Canonical JSON verification outputs
+│   └── V2_ROBUSTNESS_STUDY/            <-- 90 Run Prediction Records & Tables
+│       ├── seed_{42,123,2024,3407,7777}/<-- predictions.csv, meta.json, history.json
+│       └── analysis/tables/            <-- Canonical CSV & JSON metric tables
+│
+├── tests/                              <-- Automated Test Suite (pytest)
+│   ├── test_model_architecture.py      <-- Parameter count & receptive field tests
+│   ├── test_prediction_integrity.py    <-- Run completeness & label consistency
+│   ├── test_statistical_reproducibility.py <-- Recomputation of exact findings
+│   └── test_archive_checksums.py       <-- Verification of frozen ZIP checksums
+│
+├── scripts/                            <-- Utility & Release Verification Scripts
+│   └── verify_release.py               <-- One-step release health audit
+│
+├── .github/workflows/ci.yml            <-- Continuous Integration Workflow
+├── CITATION.cff                        <-- Machine-readable citation metadata
+├── LICENSE                             <-- MIT License (c) 2025 Saqib Ahmad Bhat et al.
+├── CHANGELOG.md                        <-- Version history
+├── CONTRIBUTING.md                     <-- Contribution guidelines
+└── SECURITY.md                         <-- Security & disclosure policy
 ```
 
-## Citation
+---
 
-If you use this code or reference these results, please cite:
+## Quick-Start: Reproduce Findings in Under 10 Seconds
+
+All 90 run predictions are committed in the repository. No GPU or training required to verify all statistics:
+
+```bash
+# 1. Clone repository
+git clone https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion.git
+cd subject-independent-emg-imu-fusion
+
+# 2. Run primary statistical verification
+python3 v2_rate_matching_study/verification/verify_v2_statistics.py \
+    v2_rate_matching_study/V2_ROBUSTNESS_STUDY \
+    /tmp/stat_check.json
+
+# 3. Run sensitivity & permutation verification
+python3 v2_rate_matching_study/verification/verify_v2_additional_stats.py \
+    v2_rate_matching_study/V2_ROBUSTNESS_STUDY \
+    /tmp/additional_check.json
+
+# 4. Run automated test suite
+pip install pytest
+pytest tests/ -v
+```
+
+See [`docs/EXECUTION_GUIDE.md`](docs/EXECUTION_GUIDE.md) and [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for full reproduction details.
+
+---
+
+## Zenodo Distribution Architecture
+
+The V2 release is archived under the Concept DOI [10.5281/zenodo.22649504](https://doi.org/10.5281/zenodo.22649504) across three frozen components:
+
+1. **`v2_release_candidate_final.zip` (1,995,409 bytes / ~1.90 MiB):** Complete software source code, training harness, 90 run configurations, per-window prediction CSVs, metric tables, figures, test suite, and execution instructions.  
+   *SHA-256:* `787ff47226c4c237a8110fbe35bb085c316642a3743750a2e599265748bd46a0`
+2. **`v2_reproducibility_data_final.zip` (2,382,660,603 bytes / ~2.22 GiB):** Companion preprocessed windowed array archive containing 18 NumPy array files (`data/processed/{E3-D,E4}/dataset_fold_{1..9}.npz`) to enable model retraining without raw CSV windowing.  
+   *SHA-256:* `00ddeff0ead81d394a5e516f584ef52a5d5ef97b35fbc44e69bb921dacb939a2`
+3. **`v2_verification_audit.zip` (67,848 bytes / ~66.3 KiB):** Supplementary independent verification suite containing statistical verification scripts, full-cohort spectral analysis outputs across all 361 trials, and the complete scientific discrepancy register.  
+   *SHA-256:* `c80e46a3fc46e0fb56008c8db48ce63c7e87922a645dfb7ff72fd0667f4b364d`
+
+---
+
+## Citation & Academic Attribution
+
+If you use this codebase, models, or prediction records, please cite:
 
 ```bibtex
-@misc{bhat2025emgimu,
-  author       = {Bhat, Saqib Ahmad and Karuvelam, P. Subha},
-  title        = {Subject-Independent Multirate {EMG}--{IMU} Fusion for
-                  Lower Limb Activity Recognition: A Reproducible
-                  Evaluation on the {SDALLE} Dataset},
-  year         = {2025},
-  howpublished = {\url{https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion}}
+@software{bhat2026sdalle_v2,
+  author       = {Bhat, Saqib Ahmad and G, Sona and Karuvelam, P. Subha},
+  title        = {{Subject-Independent EMG-IMU Fusion for Lower-Limb Activity Recognition: Code and Frozen Results}},
+  month        = nov,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {2.0.0},
+  doi          = {10.5281/zenodo.22649504},
+  url          = {https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion}
 }
 ```
 
-## License
+Please also cite the underlying benchmark dataset:
+```bibtex
+@dataset{ibrahim2025sdalle,
+  author       = {Ibrahim, Abdellatif Hamed and Ali, Mohamed and Mohsen, Reham and El-Khoreby, Ahmed and Farouk, Hossam},
+  title        = {{SDALLE: A Multimodal Dataset for Human Activity Recognition using EMG and IMU Sensors}},
+  month        = feb,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.14841611}
+}
+```
 
-This project's original source code is released under the [MIT License](LICENSE). The SDALLE dataset is subject to its own license terms as specified by its authors on [Zenodo](https://zenodo.org/records/14841611).
+---
+
+## Licensing
+
+- **Software Source Code:** Licensed under the [MIT License](LICENSE) (`Copyright (c) 2025 Saqib Ahmad Bhat, Sona G, P. Subha Karuvelam`).
+- **Documentation, Result Tables, Figures, and Derived Arrays:** Shared under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+- **Upstream Dataset:** SDALLE is licensed under [CC BY 4.0](https://doi.org/10.5281/zenodo.14841611).

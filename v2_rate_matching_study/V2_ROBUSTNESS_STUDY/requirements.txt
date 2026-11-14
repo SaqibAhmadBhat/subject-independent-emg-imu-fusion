@@ -1,0 +1,20 @@
+# Core scientific computing
+numpy==2.4.2
+scipy==1.17.1
+matplotlib==3.10.8
+pandas==3.0.3
+
+# Deep learning
+torch==2.10.0
+
+# Note: scikit-learn is NOT required for V2 experiments (not used in training or evaluation pipeline).
+# It is listed here for reference only if needed for downstream analysis.
+# scikit-learn>=1.3.0  # optional
+
+# Note: torchvision and torchaudio are NOT required.
+# No GPU-specific wheels are pinned here; install CUDA-enabled torch separately if needed:
+# pip install torch==2.10.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+
+# Standard library modules used (no install required):
+# os, sys, json, csv, pathlib, argparse, random, copy, time, hashlib
+

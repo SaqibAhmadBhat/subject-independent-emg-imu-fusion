@@ -1,24 +1,43 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-title: "Subject-Independent Multirate EMG-IMU Fusion for Lower Limb Activity Recognition"
+message: "If you use this software or these results, please cite this repository and the SDALLE dataset (https://doi.org/10.5281/zenodo.14841611). Software code is licensed under the MIT License; documentation, tables, figures, and derived data are shared under CC-BY 4.0 where rights permit."
+title: "Subject-independent EMG-IMU fusion for lower-limb activity recognition: code and frozen results"
 type: software
+version: 2.0.0
 authors:
   - family-names: Bhat
     given-names: Saqib Ahmad
     orcid: "https://orcid.org/0009-0003-9248-6174"
+    affiliation: "Government College of Engineering, Tirunelveli, India"
+  - family-names: G
+    given-names: Sona
+    orcid: "https://orcid.org/0000-0002-1786-4193"
+    affiliation: "Government College of Engineering, Tirunelveli, India"
   - family-names: Karuvelam
     given-names: P. Subha
     orcid: "https://orcid.org/0000-0002-9958-6106"
+    affiliation: "Government College of Engineering, Tirunelveli, India"
 repository-code: "https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion"
 license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22649504
+    description: "Concept DOI: all versions of this repository; resolves to the latest version"
+  - type: doi
+    value: 10.5281/zenodo.22649505
+    description: "Version 1.0.0 (multirate fusion study)"
 keywords:
-  - electromyography
+  - surface electromyography
   - inertial measurement unit
   - sensor fusion
-  - multirate fusion
+  - sampling rate
   - activity recognition
-  - deep learning
   - convolutional neural network
   - leave-one-subject-out
-  - subject-independent
   - SDALLE
+abstract: >-
+  Version 2.0.0 adds the folder v2_rate_matching_study: the code, protocol, per-window predictions and
+  verification scripts of a 90-run comparison of rate-matched and native-rate surface EMG in a dual-branch
+  EMG-IMU network (SDALLE dataset, nine participants, leave-one-participant-out, five seeds; protocol-specified
+  primary analysis, not fully prespecified). Software source code is licensed under the MIT License; documentation,
+  figures, result tables, and derived outputs are shared under Creative Commons Attribution 4.0 International (CC-BY 4.0).
+  Version 1.0.0 (tag v1.0.0) is unchanged.

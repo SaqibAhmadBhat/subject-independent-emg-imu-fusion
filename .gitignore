@@ -50,3 +50,43 @@ extracted.txt
 # (training log is preserved in results/ as a frozen artifact;
 #  evaluation run log contains machine-specific paths)
 evaluation/evaluation_run.log
+
+# ── LaTeX build artifacts (paper/) ───────────────────────────
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.toc
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+
+# Stray empty class file (could not be deleted from mounted FS; not part of the repo)
+paper/IEEEtran.cls
+
+# ── Private research folders and submission packages ─────────
+*.zip
+*.doc
+*.docx
+*.tiff
+BMT_*
+CMPB_*
+JBI_*
+MBEC_*
+SUBMISSION_*
+Claude outputs/
+V2/
+V2_AUDIT_PACKAGE*
+V2_FINAL_*
+V2_IMPLEMENTATION_*
+V2_ROBUSTNESS_STUDY_backup_*
+_obsolete_superseded/
+bhat.zip
+paper/cover_letter.md
+*.pt
+v2_rate_matching_study/data/
+v2_rate_matching_study/**/__pycache__/
+v2_rate_matching_study/**/.DS_Store
+.worktrees/
+/V2_ROBUSTNESS_STUDY/

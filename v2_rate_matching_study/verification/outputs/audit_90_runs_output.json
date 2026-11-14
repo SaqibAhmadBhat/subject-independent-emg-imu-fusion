@@ -1,0 +1,35 @@
+{
+ "n_runs": 90,
+ "issues": [],
+ "distinct_hyperparameter_sets": 1,
+ "hyperparameters": {
+  "batch_size": 64,
+  "dropout": 0.3,
+  "epochs": 50,
+  "lr": 0.001,
+  "weight_decay": 0.0001
+ },
+ "model_files_present": 90,
+ "model_file_sizes": [
+  1341843
+ ],
+ "between_condition_prediction_agreement": {
+  "mean": 0.8022879162279314,
+  "min": 0.5857338820301783,
+  "max": 0.9669540229885057
+ },
+ "execution_order_blocks": [
+  "E3-D seed 42",
+  "E4 seed 42",
+  "E3-D seed 123",
+  "E4 seed 123",
+  "E3-D seed 2024",
+  "E4 seed 2024",
+  "E3-D seed 3407",
+  "E4 seed 3407",
+  "E3-D seed 7777",
+  "E4 seed 7777"
+ ],
+ "first_run": "2026-10-08T18:11:11",
+ "last_run": "2026-11-07T07:16:27"
+}

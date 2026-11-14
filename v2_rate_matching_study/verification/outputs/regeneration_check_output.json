@@ -1,0 +1,813 @@
+{
+ "environment": {
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "python": "3.10.12"
+ },
+ "n_trials": 361,
+ "subjects": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9"
+ ],
+ "fold1_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold1_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "all_identical": true,
+ "max_abs_diff_overall": 0,
+ "fold2_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold2_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold3_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold3_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold4_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold4_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold5_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold5_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold6_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold6_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold7_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold7_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold8_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold8_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold9_E3-D": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ },
+ "fold9_E4": {
+  "X_emg_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_train": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_train": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_emg_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "X_imu_test": {
+   "shape_equal": true,
+   "dtype_new": "float32",
+   "dtype_stored": "float32",
+   "identical": true,
+   "max_abs_diff": 0.0
+  },
+  "y_test": {
+   "shape_equal": true,
+   "dtype_new": "int64",
+   "dtype_stored": "int64",
+   "identical": true,
+   "max_abs_diff": 0.0
+  }
+ }
+}

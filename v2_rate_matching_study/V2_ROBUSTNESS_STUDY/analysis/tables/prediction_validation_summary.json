@@ -1,0 +1,49 @@
+{
+  "validator": "validate_predictions_from_source.py (Strengthened Release Version)",
+  "validation_scope_disclaimer": "Level-A validation establishes label-sequence concordance rather than independent physical sample identity, as raw sensor timestamp arrays and sample IDs are not preserved in Level-A processed binary files.",
+  "total_runs_evaluated": 90,
+  "expected_runs": 90,
+  "runs_coverage_fraction": 1.0,
+  "fatal_errors_count": 0,
+  "all_runs_passed": true,
+  "sequential_index_assertion": {
+    "assertion": "np.array_equal(indices, np.arange(n_samples))",
+    "passed_count": 90,
+    "total_count": 90,
+    "all_passed": true
+  },
+  "paired_alignment_integrity": {
+    "total_pairs_tested": 45,
+    "pairs_with_identical_length": 45,
+    "pairs_with_identical_sample_indices": 45,
+    "pairs_with_identical_ground_truth": 45,
+    "pairs_with_identical_class_names": 45,
+    "support_equality_confirmed": true
+  },
+  "confusion_matrix_reconstruction": {
+    "orientation": "row=true_label, col=pred_label",
+    "classes_verified": [
+      "jogging",
+      "stairs_down",
+      "stairs_up",
+      "walking"
+    ],
+    "total_matrices_verified": 90,
+    "matrices_exactly_matching_meta": 90,
+    "max_accuracy_discrepancy": 4.945904172881654e-07,
+    "max_macro_f1_discrepancy": 8.57552516997373e-07
+  },
+  "sample_level_support_by_fold": {
+    "fold_1": 647,
+    "fold_2": 568,
+    "fold_3": 729,
+    "fold_4": 696,
+    "fold_5": 746,
+    "fold_6": 722,
+    "fold_7": 654,
+    "fold_8": 690,
+    "fold_9": 751
+  },
+  "total_test_windows_in_cohort": 6203,
+  "fatal_errors": []
+}
