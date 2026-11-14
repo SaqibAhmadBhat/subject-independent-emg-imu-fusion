@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="100%" style="background:#0F172A; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="emgRaw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="imuRaw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="splineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="40" fill="#F8FAFC" font-size="20" font-weight="bold" text-anchor="middle">Multimodal Signal Preprocessing & Rate-Matching Pipeline</text>
+  <text x="500" y="65" fill="#94A3B8" font-size="13" text-anchor="middle">Controlled Ablation: Rate-Matched (E3-D) vs Native-Rate (E4)</text>
+
+  <!-- Raw Sensors Section -->
+  <rect x="40" y="95" width="220" height="380" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+  <text x="150" y="125" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">Raw SDALLE Acquisition</text>
+
+  <!-- EMG Node -->
+  <rect x="60" y="150" width="180" height="70" rx="8" fill="url(#emgRaw)"/>
+  <text x="150" y="178" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">sEMG Sensors (8 Ch)</text>
+  <text x="150" y="200" fill="#F0F9FF" font-size="11" text-anchor="middle">fs ≈ 1259.26 Hz</text>
+
+  <!-- IMU Node -->
+  <rect x="60" y="270" width="180" height="70" rx="8" fill="url(#imuRaw)"/>
+  <text x="150" y="298" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">IMU Sensors (48 Ch)</text>
+  <text x="150" y="320" fill="#FFFBEB" font-size="11" text-anchor="middle">fs ≈ 148.15 Hz</text>
+
+  <!-- Sync Timestamp Note -->
+  <rect x="60" y="380" width="180" height="75" rx="8" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+  <text x="150" y="405" fill="#94A3B8" font-size="10.5" font-weight="bold" text-anchor="middle">Temporal Alignment</text>
+  <text x="150" y="423" fill="#CBD5E1" font-size="9.5" text-anchor="middle">Synchronized Sample Times</text>
+  <text x="150" y="439" fill="#CBD5E1" font-size="9.5" text-anchor="middle">361 Validated Trials</text>
+
+  <!-- Rate Transformation Stage -->
+  <rect x="310" y="95" width="340" height="380" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+  <text x="480" y="125" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">Rate-Matching & Conditioning</text>
+
+  <!-- Path E3-D: Spline Interpolation -->
+  <rect x="330" y="150" width="300" height="110" rx="8" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5"/>
+  <rect x="330" y="150" width="300" height="28" rx="8" fill="url(#splineGrad)"/>
+  <text x="480" y="169" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">Condition E3-D: Cubic Spline Interpolation</text>
+  <text x="480" y="196" fill="#F8FAFC" font-size="11" text-anchor="middle">scipy.interpolate.interp1d(kind='cubic')</text>
+  <text x="480" y="215" fill="#FCD34D" font-size="10.5" text-anchor="middle">Evaluated at IMU sample times (148.15 Hz)</text>
+  <text x="480" y="235" fill="#F87171" font-size="10" font-weight="bold" text-anchor="middle">⚠ No Anti-Aliasing Pre-Filter Applied</text>
+
+  <!-- Path E4: Native-Rate -->
+  <rect x="330" y="280" width="300" height="90" rx="8" fill="#0F172A" stroke="#64748B" stroke-width="1.5"/>
+  <rect x="330" y="280" width="300" height="28" rx="8" fill="#475569"/>
+  <text x="480" y="299" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">Condition E4: Native-Rate Multirate</text>
+  <text x="480" y="325" fill="#F8FAFC" font-size="11" text-anchor="middle">sEMG remains at 1259.26 Hz (8 ch)</text>
+  <text x="480" y="345" fill="#94A3B8" font-size="10.5" text-anchor="middle">IMU remains at 148.15 Hz (48 ch)</text>
+
+  <!-- Windowing Stage -->
+  <rect x="690" y="95" width="270" height="380" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+  <text x="825" y="125" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">Sliding Window Segmentation</text>
+
+  <!-- 200 ms Windowing E3-D -->
+  <rect x="710" y="150" width="230" height="110" rx="8" fill="#0F172A" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="825" y="175" fill="#38BDF8" font-size="12" font-weight="bold" text-anchor="middle">E3-D Window Tensors</text>
+  <text x="825" y="198" fill="#F8FAFC" font-size="11" text-anchor="middle">sEMG: 8 ch × 148 samples</text>
+  <text x="825" y="218" fill="#F8FAFC" font-size="11" text-anchor="middle">IMU: 48 ch × 148 samples</text>
+  <text x="825" y="240" fill="#10B981" font-size="10" font-weight="bold" text-anchor="middle">Identical Sequence Length (148)</text>
+
+  <!-- 200 ms Windowing E4 -->
+  <rect x="710" y="280" width="230" height="110" rx="8" fill="#0F172A" stroke="#64748B" stroke-width="1.5"/>
+  <text x="825" y="305" fill="#94A3B8" font-size="12" font-weight="bold" text-anchor="middle">E4 Window Tensors</text>
+  <text x="825" y="328" fill="#F8FAFC" font-size="11" text-anchor="middle">sEMG: 8 ch × 238 samples</text>
+  <text x="825" y="348" fill="#F8FAFC" font-size="11" text-anchor="middle">IMU: 48 ch × 148 samples</text>
+  <text x="825" y="370" fill="#F59E0B" font-size="10" font-weight="bold" text-anchor="middle">Multirate Dual Sampling</text>
+
+  <!-- Connectors -->
+  <path d="M 240 185 L 330 185" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M 240 185 L 285 185 L 285 320 L 330 320" stroke="#38BDF8" stroke-width="2" fill="none"/>
+  <path d="M 630 185 L 710 185" stroke="#8B5CF6" stroke-width="2"/>
+  <path d="M 630 320 L 710 320" stroke="#64748B" stroke-width="2"/>
+</svg>

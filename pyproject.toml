@@ -1,0 +1,123 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subject-independent-emg-imu-fusion"
+version = "2.0.0"
+description = "Subject-Independent Multimodal EMG–IMU Fusion for Human Activity Recognition: Benchmark and Robustness Suite"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Saqib Ahmad Bhat", email = "saqibahmadbhat@gmail.com" },
+    { name = "G. Sona" },
+    { name = "P. Subha Karuvelam" }
+]
+keywords = [
+    "electromyography",
+    "inertial-measurement-unit",
+    "deep-learning",
+    "multimodal-fusion",
+    "human-activity-recognition",
+    "biomechanics",
+    "wearable-sensors",
+    "reproducibility"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "numpy>=1.22.0",
+    "scipy>=1.9.0",
+    "torch>=2.0.0",
+    "scikit-learn>=1.1.0",
+    "pandas>=1.5.0",
+    "matplotlib>=3.6.0",
+    "seaborn>=0.12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.4.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+]
+docs = [
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.5.0",
+    "pymdown-extensions>=10.7",
+]
+presentation = [
+    "python-pptx>=0.6.21",
+    "reportlab>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion"
+Documentation = "https://saqibahmadbhat.github.io/subject-independent-emg-imu-fusion/docs/"
+Explorer = "https://saqibahmadbhat.github.io/subject-independent-emg-imu-fusion/explorer/"
+Zenodo = "https://doi.org/10.5281/zenodo.22649504"
+Repository = "https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion.git"
+Issues = "https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion/issues"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+    ".git",
+    ".venv",
+    "build",
+    "dist",
+    "dashboard/node_modules",
+    "site",
+    "v2_rate_matching_study/data",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+]
+ignore = [
+    "E501", # line too long (handled by formatting / long scientific comments)
+    "B008", # do not perform function calls in argument defaults
+    "B905", # zip without an explicit strict= parameter
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+python_files = [
+    "test_*.py",
+    "*_test.py",
+]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+exclude = [
+    "dashboard/",
+    "site/",
+    ".venv/",
+]

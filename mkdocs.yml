@@ -1,0 +1,102 @@
+site_name: EMG–IMU Multimodal Fusion Platform
+site_description: Subject-Independent Multimodal EMG–IMU Fusion for Human Activity Recognition — Research Software Platform & Benchmark
+site_author: Saqib Ahmad Bhat, G. Sona, P. Subha Karuvelam
+site_url: https://saqibahmadbhat.github.io/subject-independent-emg-imu-fusion/docs/
+repo_name: SaqibAhmadBhat/subject-independent-emg-imu-fusion
+repo_url: https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: sky
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: sky
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SaqibAhmadBhat/subject-independent-emg-imu-fusion
+    - icon: fontawesome/solid/cube
+      link: https://doi.org/10.5281/zenodo.22649504
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Architecture & Signal:
+      - Deep Neural Architecture: ARCHITECTURE.md
+      - Signal Processing & Spline: PREPROCESSING.md
+      - End-to-End Workflow: RESEARCH_WORKFLOW.md
+  - Experiments & Data:
+      - SDALLE Dataset Guide: DATASET_GUIDE.md
+      - Experiment Matrix & Protocol: EXPERIMENT_DESIGN.md
+  - Findings & Inferences:
+      - Primary Results & Findings: RESULTS.md
+      - Statistical Significance: STATISTICAL_ANALYSIS.md
+      - Spectral Analysis & Aliasing: SPECTRAL_ANALYSIS.md
+  - Verification & Audit:
+      - Execution Guide: EXECUTION_GUIDE.md
+      - Reproducibility Protocols: REPRODUCIBILITY.md
+      - Scientific Discrepancy Register: DISCREPANCY_REGISTER.md
+  - Software & Engineering:
+      - Installation & Environment: INSTALLATION.md
+      - Verification Scripts & CLI: API_REFERENCE.md
+      - Release Notes (v2.0.0): RELEASE_NOTES.md

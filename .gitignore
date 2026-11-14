@@ -44,6 +44,8 @@ results_backup/
 # ── Private documents ────────────────────────────────────────
 *.pdf
 !paper/*.pdf
+!presentation/*.pdf
+!presentation/**/*.pdf
 extracted.txt
 
 # ── Logs with machine-specific paths ────────────────────────
@@ -90,3 +92,8 @@ v2_rate_matching_study/**/__pycache__/
 v2_rate_matching_study/**/.DS_Store
 .worktrees/
 /V2_ROBUSTNESS_STUDY/
+
+# ── Web and Documentation Build Artifacts ─────────
+site/
+dashboard/dist/
+dashboard/node_modules/

@@ -1,0 +1,21 @@
+name: Feature or Extension Request
+description: Propose a new model architecture, baseline, or dataset evaluation
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: We welcome proposals to extend this multimodal benchmark platform.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Extension
+      description: Describe the new model, feature, or benchmark test you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Scientific Motivation
+      description: How does this advance subject-independent biomechanical sensing or activity recognition?
+    validations:
+      required: true
