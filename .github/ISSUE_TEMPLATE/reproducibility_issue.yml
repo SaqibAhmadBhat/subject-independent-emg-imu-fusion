@@ -1,0 +1,32 @@
+name: Reproducibility Discrepancy
+description: Report a discrepancy in reproducing numbers, figures, or statistical tables
+labels: ["reproducibility", "audit"]
+body:
+  - type: markdown
+    attributes:
+      value: Transparent replication is central to this research platform. Please report any numerical divergence.
+  - type: input
+    id: metric
+    attributes:
+      label: Discrepant Metric or Figure
+      description: Which table, statistic, or figure diverged?
+      placeholder: e.g. Table 2 Wilcoxon W, or Figure 3 PSD power ratio
+    validations:
+      required: true
+  - type: textarea
+    id: published_vs_reproduced
+    attributes:
+      label: Published vs Reproduced Values
+      description: State the published value from the repository and your exact reproduced result.
+      placeholder: |
+        Published value: ...
+        Reproduced value: ...
+    validations:
+      required: true
+  - type: textarea
+    id: execution_details
+    attributes:
+      label: Execution & Script Details
+      description: State the exact script command, arguments, random seed, and hardware environment.
+    validations:
+      required: true

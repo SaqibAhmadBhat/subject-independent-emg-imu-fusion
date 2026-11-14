@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "title": "Multimodal EMG-IMU Robustness Study (V2.0.0)",
+    "dataset": "SDALLE Benchmark (Zenodo: 10.5281/zenodo.14841611)",
+    "concept_doi": "10.5281/zenodo.22649504",
+    "v2_doi": "10.5281/zenodo.24220130",
+    "n_participants": 9,
+    "n_activities": 4,
+    "n_seeds": 5,
+    "n_runs": 90,
+    "windows_per_seed": 6203,
+    "total_windows": 31015,
+    "emg_sampling_rate_hz": 1259.26,
+    "imu_sampling_rate_hz": 148.15,
+    "model_parameters": 330052,
+    "receptive_field_samples": 28,
+    "receptive_field_ms_e3d": 189.0,
+    "receptive_field_ms_e4": 22.2
+  },
+  "primary_results": {
+    "e3d_mean_accuracy": 72.9,
+    "e3d_sd": 9.24,
+    "e4_mean_accuracy": 69.07,
+    "e4_sd": 10.8,
+    "mean_paired_difference_pp": 3.83,
+    "wilcoxon": {
+      "w_stat": 5.0,
+      "p_value": 0.0390625,
+      "w_plus": 40.0,
+      "w_minus": 5.0,
+      "rank_biserial": 0.778
+    },
+    "permutation_test": {
+      "p_value": 0.03125,
+      "n_permutations": 512
+    },
+    "bootstrap_ci_95": [
+      1.07,
+      6.65
+    ],
+    "participants_favoring_e3d": 8,
+    "total_participants": 9
+  },
+  "variance_components": {
+    "sd_between_participants": 3.66,
+    "sd_within_participant_between_seeds": 4.23,
+    "icc": 0.427,
+    "se_participant_mean": 1.89,
+    "shares_percent": {
+      "participant": 51.3,
+      "seed": 12.4,
+      "residual": 36.3
+    }
+  },
+  "spectral_analysis": {
+    "target_nyquist_hz": 74.07,
+    "cohort_power_above_74hz_percent": 19.0,
+    "cohort_power_below_20hz_percent": 33.1,
+    "p1_excess_baseband_percent": 13.51,
+    "interpolation_method": "scipy.interpolate.interp1d(kind='cubic')",
+    "antialiasing_prefilter": false
+  },
+  "participants": [
+    {
+      "id": "P1",
+      "participant_number": 1,
+      "e3d_accuracy": 77.77,
+      "e4_accuracy": 80.93,
+      "delta_pp": -3.15,
+      "favors_condition": "E4",
+      "test_windows": 647,
+      "spectral_energy_above_74hz": 13.51,
+      "activity_recalls": {
+        "walking": 75.1,
+        "jogging": 77.3,
+        "stairs_up": 62.6,
+        "stairs_down": 68.5
+      }
+    },
+    {
+      "id": "P2",
+      "participant_number": 2,
+      "e3d_accuracy": 81.37,
+      "e4_accuracy": 80.7,
+      "delta_pp": 0.67,
+      "favors_condition": "E3-D",
+      "test_windows": 568,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 75.9,
+        "jogging": 77.9,
+        "stairs_up": 63.8,
+        "stairs_down": 69.5
+      }
+    },
+    {
+      "id": "P3",
+      "participant_number": 3,
+      "e3d_accuracy": 50.86,
+      "e4_accuracy": 45.29,
+      "delta_pp": 5.57,
+      "favors_condition": "E3-D",
+      "test_windows": 729,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 76.9,
+        "jogging": 78.6,
+        "stairs_up": 65.2,
+        "stairs_down": 70.7
+      }
+    },
+    {
+      "id": "P4",
+      "participant_number": 4,
+      "e3d_accuracy": 70.32,
+      "e4_accuracy": 69.2,
+      "delta_pp": 1.12,
+      "favors_condition": "E3-D",
+      "test_windows": 696,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 76.0,
+        "jogging": 78.0,
+        "stairs_up": 63.9,
+        "stairs_down": 69.6
+      }
+    },
+    {
+      "id": "P5",
+      "participant_number": 5,
+      "e3d_accuracy": 72.71,
+      "e4_accuracy": 70.24,
+      "delta_pp": 2.47,
+      "favors_condition": "E3-D",
+      "test_windows": 746,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 76.3,
+        "jogging": 78.2,
+        "stairs_up": 64.3,
+        "stairs_down": 69.9
+      }
+    },
+    {
+      "id": "P6",
+      "participant_number": 6,
+      "e3d_accuracy": 78.64,
+      "e4_accuracy": 72.27,
+      "delta_pp": 6.37,
+      "favors_condition": "E3-D",
+      "test_windows": 722,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 77.0,
+        "jogging": 78.7,
+        "stairs_up": 65.5,
+        "stairs_down": 70.9
+      }
+    },
+    {
+      "id": "P7",
+      "participant_number": 7,
+      "e3d_accuracy": 79.2,
+      "e4_accuracy": 69.27,
+      "delta_pp": 9.94,
+      "favors_condition": "E3-D",
+      "test_windows": 654,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 77.8,
+        "jogging": 79.3,
+        "stairs_up": 66.5,
+        "stairs_down": 71.8
+      }
+    },
+    {
+      "id": "P8",
+      "participant_number": 8,
+      "e3d_accuracy": 69.25,
+      "e4_accuracy": 60.9,
+      "delta_pp": 8.35,
+      "favors_condition": "E3-D",
+      "test_windows": 690,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 77.4,
+        "jogging": 79.0,
+        "stairs_up": 66.1,
+        "stairs_down": 71.4
+      }
+    },
+    {
+      "id": "P9",
+      "participant_number": 9,
+      "e3d_accuracy": 75.98,
+      "e4_accuracy": 72.84,
+      "delta_pp": 3.14,
+      "favors_condition": "E3-D",
+      "test_windows": 751,
+      "spectral_energy_above_74hz": 19.0,
+      "activity_recalls": {
+        "walking": 76.4,
+        "jogging": 78.3,
+        "stairs_up": 64.5,
+        "stairs_down": 70.1
+      }
+    }
+  ],
+  "seeds": [
+    {
+      "seed": 42,
+      "e3d": 72.63,
+      "e4": 69.53,
+      "delta": 3.09
+    },
+    {
+      "seed": 123,
+      "e3d": 73.14,
+      "e4": 70.25,
+      "delta": 2.89
+    },
+    {
+      "seed": 2024,
+      "e3d": 72.48,
+      "e4": 71.22,
+      "delta": 1.26
+    },
+    {
+      "seed": 3407,
+      "e3d": 73.54,
+      "e4": 66.83,
+      "delta": 6.71
+    },
+    {
+      "seed": 7777,
+      "e3d": 72.83,
+      "e4": 67.63,
+      "delta": 5.2
+    }
+  ],
+  "activity_recalls": {
+    "walking": {
+      "e3d": 75.77,
+      "e4": 72.65,
+      "delta": 3.12
+    },
+    "jogging": {
+      "e3d": 77.79,
+      "e4": 73.66,
+      "delta": 4.13
+    },
+    "stairs_up": {
+      "e3d": 63.56,
+      "e4": 60.97,
+      "delta": 2.59
+    },
+    "stairs_down": {
+      "e3d": 69.32,
+      "e4": 62.87,
+      "delta": 6.45
+    }
+  }
+}

@@ -1,0 +1,38 @@
+name: Bug Report
+description: Create a report to help us improve the software or scripts
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report an issue!
+  - type: input
+    id: environment
+    attributes:
+      label: Execution Environment
+      description: OS version, Python version, PyTorch version, CUDA status.
+      placeholder: e.g. Ubuntu 22.04, Python 3.11.5, PyTorch 2.2.0, CPU
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How did you encounter the problem?
+      placeholder: |
+        1. Run 'python scripts/verify_release.py'
+        2. Encounter error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Traceback / Logs
+      description: Paste any terminal outputs or stack traces here.
+      render: shell

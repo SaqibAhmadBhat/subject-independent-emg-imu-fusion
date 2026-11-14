@@ -1,0 +1,73 @@
+:root {
+  --md-primary-fg-color: #0284c7;
+  --md-primary-fg-color--light: #38bdf8;
+  --md-primary-fg-color--dark: #0369a1;
+  --md-accent-fg-color: #38bdf8;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b1120;
+  --md-default-bg-color--light: #1e293b;
+  --md-default-bg-color--lighter: #334155;
+  --md-default-fg-color: #e2e8f0;
+  --md-default-fg-color--light: #94a3b8;
+  --md-default-fg-color--lighter: #64748b;
+  --md-primary-fg-color: #38bdf8;
+  --md-accent-fg-color: #818cf8;
+}
+
+/* Publication figure frames */
+.scientific-figure {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--md-default-bg-color--light);
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.scientific-figure img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.scientific-figure figcaption {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 10px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Metric stat grid */
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 1.5em 0;
+}
+
+.metric-card {
+  background: var(--md-default-bg-color--light);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.metric-card .val {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  font-family: monospace;
+}
+
+.metric-card .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  margin-top: 4px;
+}

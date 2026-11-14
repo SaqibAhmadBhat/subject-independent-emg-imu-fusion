@@ -63,6 +63,11 @@ To incorporate nested variability (participants as primary cluster, random seeds
 $$\text{CI}_{95\%}^{\text{two-stage}} = \mathbf{[1.0671, 6.6489] \text{ pp}} \approx [1.07, 6.65] \text{ pp}$$
 Accounting for seed-level stochastic training variation widens the confidence interval slightly but confirms that zero remains strictly excluded.
 
+<figure class="scientific-figure">
+  <img src="../assets/figures/fig4_hierarchical_bootstrap_ci.svg" alt="Hierarchical Bootstrap CI" />
+  <figcaption><strong>Figure 1:</strong> Sampling distribution of paired accuracy differences (&Delta;) from 10,000 two-stage hierarchical bootstrap iterations (subjects resampled with replacement, seeds nested). 95% percentile confidence interval: [1.07, 6.65] pp. Zero is strictly excluded.</figcaption>
+</figure>
+
 ### C. Leave-One-Seed-Out Sensitivity
 Recomputing participant means and Wilcoxon tests by omitting each seed in turn:
 - Omit Seed 42: Mean difference $+4.01$ pp, $W = 2$, $p = \mathbf{0.012}$
@@ -89,5 +94,10 @@ Using a one-way random effects ANOVA on the 45 seed-level paired differences $D_
 - Estimated standard deviation within participants (seed noise): $\sigma_w = \sqrt{\text{MS}_w} = \mathbf{4.23 \text{ pp}}$
 - Intraclass Correlation Coefficient (ICC):
   $$\text{ICC} = \frac{\sigma_b^2}{\sigma_b^2 + \sigma_w^2} = \mathbf{0.43}$$
+
+<figure class="scientific-figure">
+  <img src="../assets/figures/fig5_variance_components_decomposition.svg" alt="Variance Components Decomposition" />
+  <figcaption><strong>Figure 2:</strong> Decomposition of total experimental variance into Condition, Participant, and Random Seed components. Between-participant variation dominates the variance budget, while 5-seed aggregation successfully mitigates stochastic training noise.</figcaption>
+</figure>
 
 **Scientific Finding:** Seed-to-seed stochastic variation ($4.23$ pp) is larger than genuine between-participant variation ($3.66$ pp). Evaluating only a single random seed produces noisy, unreliable comparisons. Averaging 5 seeds reduces the seed-noise standard error of a participant's mean to $4.23 / \sqrt{5} = \mathbf{1.89 \text{ pp}}$.
