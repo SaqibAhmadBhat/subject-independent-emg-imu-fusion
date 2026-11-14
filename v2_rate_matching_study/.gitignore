@@ -1,0 +1,7 @@
+# Local data and reruns: never commit these
+data/raw/
+V2/data/
+retrain/
+__pycache__/
+*.py[cod]
+out_*.json

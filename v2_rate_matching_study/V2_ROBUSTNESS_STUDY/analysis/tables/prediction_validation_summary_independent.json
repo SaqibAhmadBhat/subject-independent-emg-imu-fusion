@@ -1,0 +1,22 @@
+{
+  "validator": "independent_source_validation.py (Strengthened Release Version)",
+  "validation_scope_disclaimer": "Level-A validation establishes label-sequence concordance rather than independent physical sample identity, as raw sensor timestamp arrays and sample IDs are not preserved in Level-A processed binary files.",
+  "total_runs_expected": 90,
+  "total_runs_found": 90,
+  "runs_fully_validated": 90,
+  "runs_partially_validated": 0,
+  "runs_failed": 0,
+  "sequential_index_assertion": {
+    "assertion": "np.array_equal(indices, np.arange(n_samples))",
+    "passed_count": 90,
+    "total_count": 90,
+    "all_passed": true
+  },
+  "level_a_npz_matching_runs": 90,
+  "paired_alignment_concordance_45_pairs": true,
+  "confusion_matrix_exact_matches": 90,
+  "max_accuracy_discrepancy": 4.945904172881654e-07,
+  "max_macro_f1_discrepancy": 8.57552516997373e-07,
+  "fatal_errors_count": 0,
+  "fatal_errors": []
+}
