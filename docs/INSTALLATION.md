@@ -38,12 +38,15 @@ source .venv/bin/activate
 ```bash
 pip install --upgrade pip setuptools wheel
 
-# Install core study dependencies
-pip install -r v2_rate_matching_study/V2_ROBUSTNESS_STUDY/requirements.txt
+# Install core dependencies (compatible across Python 3.10, 3.11, 3.12, 3.13)
+pip install -r requirements.txt
 
 # Install testing and development dependencies
 pip install pytest pytest-cov
 ```
+
+> [!NOTE]
+> For exact byte-level replication of the Python 3.13 reference training environment, the frozen package versions are preserved in `v2_rate_matching_study/V2_ROBUSTNESS_STUDY/requirements.txt` (requires Python 3.13).
 
 ### Step 4: Verify Installation
 Verify that PyTorch, SciPy, and NumPy load correctly:
